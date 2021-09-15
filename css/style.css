@@ -61,8 +61,8 @@ body {
   border: 3px solid #0088cf;
 }
 
-#db {
-  display: block;
+.db {
+  display: block !important;
 }
 
 .clb::after {
@@ -222,7 +222,7 @@ header .logo img {
 
 .slide>div {
   float: left;
-  width: 12%;
+  width: 100%;
   padding: 13px 0 0 50px;
 }
 

@@ -25,14 +25,30 @@
 
         arrows: true,
 
-        slidesToShow:8,
+        slidesToShow:3,
 
         slidesToScroll: 1,
 
         fade: false,
      
       });
-    });
+
+
+      $(".slide img").click(function(){
+        let ialt = $(this).attr("alt");
+        console.log(ialt);
+
+        $(".cat[data-nm='"+ialt+"']").addClass("db")
+        .siblings(".cat").removeClass("db");
+
+        $(this).addClass("on")
+        .parent().siblings().find("img").removeClass("on");
+
+      });///////// click ///////////////
+
+
+
+    }); ///////////// jQB //////////////
   </script>
   <title>브래드 이발소</title>
 </head>
@@ -102,7 +118,7 @@
     </div>
     <div id="cbx">
       <!-- <div class="cat"> -->
-      <div class="cat" id="db">
+      <div class="cat db" data-nm="브레드">
         <div class="ci">
           <img src="images/cbx1.jpg" alt="브레드">
         </div>
@@ -116,7 +132,7 @@
           </p>
         </div>
       </div>
-       <div class="cat">
+       <div class="cat" data-nm="윌크">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx2.jpg" alt="윌크">
@@ -133,7 +149,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="초코">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx3.jpg" alt="초코">
@@ -149,7 +165,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx4.jpg" alt="크로와상">
@@ -164,7 +180,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx5.jpg" alt="찐빵도사">
@@ -178,7 +194,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx6.jpg" alt="감자칩">
@@ -193,7 +209,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx7.jpg" alt="프레첼">
@@ -207,7 +223,7 @@
           </p>
         </div>
       </div>
-      <div class="cat">
+      <div class="cat" data-nm="">
       <!-- <div class="cat" id="db"> -->
         <div class="ci">
           <img src="images/cbx8.jpg" alt="버터">
