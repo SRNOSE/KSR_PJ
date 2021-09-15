@@ -182,7 +182,8 @@ header .logo img {
   color: #333;
 }
 .smenu>li>a:hover {
-  border-bottom: 1px solid #333;
+ color: #3B2216;
+ font-weight: 500;
 }
 .gnb>ul>li:hover .smenu {
   height: 50px;
