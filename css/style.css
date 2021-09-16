@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 *::before,
@@ -214,26 +214,22 @@ header .logo img {
   margin-top: 10px;
 }
 
-.slide::after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
-.slide>div {
-  float: left;
+
+.slide {
+  display: flex;
   width: 100%;
-  padding: 13px 0 0 50px;
+  justify-content: center;
 }
-
+.slide > div{
+  margin: 10px 0 0 50px;
+}
+.slide > div:first-child{
+  margin-left: 0;
+}
 .slide>div img {
   border-radius: 50%;
 }
-
-/* slick CSS */
-
-
-
 
 /* 2.#cbx */
 
