@@ -204,52 +204,35 @@ header .logo img {
   border-radius: 5px;
 }
 
-/* [컨테이너 부분] */
 
-/* 1.슬릭 슬라이드 */
-.swiper-wrapper {
+/* 1. 스와이퍼 */
+ .swipe{
   width: 100%;
-  height: 150px;
   background-color: #f6f6f6;
-  margin-top: 10px;
+  height: 150px;
+}
+
+.swipe-wrap{
   display: flex;
   justify-content: center;
 }
-
-
-/* 
-.slide {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-} */
-.swiper-wrapper > div{
-  margin: 10px 0 0 50px;
-}
-.swiper-wrapper > div:first-child{
-  margin-left: 0;
-}
-.swiper-wrapper>div img {
+ .swipe-slide{
+  margin: 10px 20px;
+ 
+ }
+.swipe-slide > img{
   border-radius: 50%;
+} 
+.swiper-button-next,
+.swiper-button-prev{
+  margin-top: 20px;
+  color: #3B2216;
 }
-
-.swiper-slide {
-
-
-
-  /* Center slide text vertically
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; */
+.swiper-button-next{
+  margin-right: 200px;
+}
+.swiper-button-prev{
+  margin-left: 200px;
 }
 /* 2.#cbx */
 
