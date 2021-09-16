@@ -218,8 +218,16 @@ header .logo img {
 }
  .swipe-slide{
   margin: 10px 20px;
- 
+  animation: logoAni1 1s ease-in-out 3s infinite alternate;
  }
+ @keyframes logoAni1{
+  from{
+    transform: rotate(15deg);
+  }
+  to{
+    transform: rotate(-15deg);
+  }
+}/* 키프레임 */
 .swipe-slide > img{
   border-radius: 50%;
 } 
