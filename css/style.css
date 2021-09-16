@@ -113,7 +113,7 @@ header .logo img {
 .gnb>ul>li {
   position: relative;
   width: 115px;
-  font-weight: bold;
+  font-weight: 700;
   transition: margin-top .5s ease-in-out;
 }
 
@@ -183,7 +183,7 @@ header .logo img {
 }
 .smenu>li>a:hover {
  color: #3B2216;
- font-weight: 500;
+ font-weight: 700;
 }
 .gnb>ul>li:hover .smenu {
   height: 50px;
@@ -207,30 +207,50 @@ header .logo img {
 /* [컨테이너 부분] */
 
 /* 1.슬릭 슬라이드 */
-.slide {
+.swiper-wrapper {
   width: 100%;
   height: 150px;
   background-color: #f6f6f6;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 
-
+/* 
 .slide {
   display: flex;
   width: 100%;
   justify-content: center;
-}
-.slide > div{
+} */
+.swiper-wrapper > div{
   margin: 10px 0 0 50px;
 }
-.slide > div:first-child{
+.swiper-wrapper > div:first-child{
   margin-left: 0;
 }
-.slide>div img {
+.swiper-wrapper>div img {
   border-radius: 50%;
 }
 
+.swiper-slide {
+
+
+
+  /* Center slide text vertically
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+}
 /* 2.#cbx */
 
 #cbx {
@@ -260,7 +280,8 @@ header .logo img {
   transition: transform .8s ease-in-out;
 }
 
-.ci img:hover {
+.ci:hover img{
+  /* 싸고있는 박스에 호버하면 img가 transform하게 해야된다 */
   -webkit-transform: rotate(720deg);
   transform: rotate(720deg);
 }
