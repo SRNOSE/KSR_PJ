@@ -211,7 +211,7 @@ body{
     text-shadow: 0px 0px 10px #000;
     text-align: center;
     transition: left .5s ease-out;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     border-radius: 50%;
 }
 .cartxt li{
@@ -222,27 +222,27 @@ body{
     margin-top: 10px;
     font-weight: bold;
 }
-.clist > ul li:hover .cartxt{
+.clist > ul li:first-child:hover .cartxt{
     left: 0;
-    top: 0;
+    top: 25px;
 }
 .clist > ul li:nth-of-type(2):hover .cartxt{
     left: 0;
-    top: 100px;
+    top: 125px;
 }
 .clist > ul li:nth-of-type(3):hover .cartxt{
     left: 0;
-    top: 200px;
+    top: 240px;
 }
 .clist > ul li:nth-of-type(4):hover .cartxt{
     left: 0;
-    top: 310px;
+    top: 350px;
 }
 .clist > ul li:nth-of-type(5):hover .cartxt{
     left: 0;
-    top: 430px;
+    top: 460px;
 }
 .clist > ul li:nth-of-type(6):hover .cartxt{
    left: 0;
-   top: 535px;
+   top: 570px;
 }
