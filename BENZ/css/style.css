@@ -247,3 +247,59 @@ body{
    left: 0;
    top:660px;
 }
+
+
+/* footer영역 */
+#footer{
+    position: relative;
+    background-color:#000 ;
+}
+.info{
+    height: 80px;
+    overflow: hidden;
+}
+.leftinfo, .sns{
+    float: left;
+}
+.leftinfo{
+    line-height: 80px;
+    padding-left: 100px;
+    font-weight: bold;
+}
+.leftinfo > li{
+    padding: 0 15px;
+}
+.sns{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sns > li{
+    width: 50px;
+    height: 50px;
+    padding: 0 15px;
+}
+.sns > li:nth-of-type(1){
+    background: url(../images/fb.png) no-repeat;
+}
+.sns > li:nth-of-type(2){
+    background: url(../images/tw.png) no-repeat;
+}
+.sns > li:nth-of-type(3){
+    background: url(../images/yt.png) no-repeat 0 4px;
+}
+.sns > li:nth-of-type(4){
+    background: url(../images/ist.png) no-repeat;
+}
+.sns > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bld{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
