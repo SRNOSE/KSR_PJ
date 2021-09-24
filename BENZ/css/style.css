@@ -180,6 +180,7 @@ body{
     height: 100%;
     border: none;
     border-radius: 55px 37px 5px 5px;
+    transition: 3s;
 }
 
 /* 카 리스트 선택메뉴 */
