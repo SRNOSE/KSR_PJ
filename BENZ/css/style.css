@@ -3,7 +3,7 @@
 @import url(reset.css);
 @font-face{ 
     font-family: mbk;
-    src:url(../mbk-font/MBKCorporateA-Regular.woff) format("woff");
+    src:url(../mbk-font/MBKCorpoS.woff) format("woff");
 }
 
 body{
@@ -136,14 +136,12 @@ body{
 }
 
 .smenu > li>a{
-    font-size: 17px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
-    color: rgb(49, 48, 48);
+    color: #666;
 }
-.smenu > li>a:hover{
-    text-decoration: underline;
-}
+
 .gnb> ul > li::after{
     content: '';
     display: block;
@@ -253,6 +251,7 @@ body{
 #footer{
     position: relative;
     background-color:#000 ;
+    font-size: 17px;
 }
 .info{
     height: 90px;
@@ -264,7 +263,7 @@ body{
 .leftinfo{
     line-height: 90px;
     padding-left: 100px;
-    font-weight: bold;
+
 }
 .leftinfo > li{
     padding: 0 15px;
