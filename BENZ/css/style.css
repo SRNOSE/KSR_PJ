@@ -157,27 +157,27 @@ body{
 
 /* 메인영역 */
 #cont{
-    height: 980px;
-    background: url(../images/car2.png) no-repeat;
+    height: 1070px;
+    background: url(../images/car2.png) no-repeat center top/cover;
     position: relative;
 }
 
 /* 카 박스 */
 #car{
     position: absolute;
-    top: 208px;
+    top: 229px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 470px;
-    height: 150px;
+    transform: translateX(-51%);
+    width: 540px;
+    height: 165px;
     background-color: #000;
-    border-radius: 60px 90px 5px 5px;
+    border-radius: 60px 67px 5px 5px;
 }
 #car iframe{
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 55px 37px 5px 5px;
+    border-radius: 50px 75px 5px 5px;
     transition: 3s;
 }
 
