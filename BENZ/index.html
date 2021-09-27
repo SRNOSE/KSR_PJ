@@ -16,9 +16,27 @@
             document.getElementById("tg").src =
                 "https://www.youtube.com/embed/" +
                 yo +
+<<<<<<< HEAD
                 " ?autoplay=1&loop=1&playlist=" +
+=======
+                " ?autoplay=1&loop=1&controls=0&playlist=" +
+>>>>>>> d30af851c6c69a2d04b8c22f8a63dae5a09d10a2
                 yo;
         }
+
+        // 자동차 애니 클래스 일정시간 간격으로 넣기
+        //setInterval(함수,시간);
+        // 일정시간 간격으로 함수실행하는 JS메서드
+        setInterval(function(){
+            var car = document.querySelector(".ani");
+
+            car.classList.remove("carAni");
+            // setTimeout(함수,시간)
+            // 일정시간 후 한번 함수실행하는 JS메서드
+            setTimeout(function(){
+                car.classList.add("carAni");
+            },100);//0.1초후 넣기
+        }, 30000);//30초간격
     </script>
     <title>Mercedes-Benz</title>
 </head>
@@ -28,7 +46,7 @@
         <h1 class="logo">
             <a href="intro.html">
                 <img src="images/logo.png" alt="벤츠로고">
-                <img src="images/mercedes_benz_car_free_vector_preview.png" alt="움직이는 자동차" class="ani">
+                <img src="images/mercedes_benz_car_free_vector_preview.png" alt="움직이는 자동차" class="ani carAni">
             </a>
         </h1>
         <nav class="gnb">

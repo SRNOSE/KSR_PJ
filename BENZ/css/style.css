@@ -31,6 +31,9 @@ body{
     position: absolute;
     left: 420px;
     top: 25px;
+    
+}
+.carAni{
     animation: riding 10s linear 2s forwards,
                 turn1 1s ease-in 13s forwards,
                 back 10s linear 15s forwards,
@@ -158,7 +161,7 @@ body{
 /* 메인영역 */
 #cont{
     height: 1070px;
-    background: url(../images/car2.png) no-repeat center top/cover;
+    background: url(../images/car2.png) repeat-x center top/auto 100%;
     position: relative;
 }
 
@@ -179,6 +182,14 @@ body{
     border: none;
     border-radius: 50px 57px 5px 5px;
     transition: 3s;
+}
+#car::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 /* 카 리스트 선택메뉴 */
