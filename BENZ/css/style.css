@@ -29,38 +29,37 @@ body{
     width: 90px;
     padding-top: 5px;
     position: absolute;
-    left: 420px;
+    left: 22%;
     top: 25px;
-    
 }
 .carAni{
     animation: riding 10s linear 2s forwards,
-                turn1 1s ease-in 13s forwards,
+                /* turn1 1s ease-in 13s forwards,
                 back 10s linear 15s forwards,
-                turn2 1s ease-in 25s forwards
+                turn2 1s ease-in 25s forwards */
                 ;
 }
 @keyframes riding{
-    0%{left:420px }
-    10%{left:450px }
-    15%{left:500px }
-    20%{left:550px }
-    25%{left:600px }
-    30%{left:650px }
-    35%{left:700px }
-    40%{left:800px }
-    45%{left:900px }
-    50%{left:1000px}
-    55%{left:1100px}
-    60%{left:1200px }
-    65%{left:1300px }
-    70%{left:1400px }
-    75%{left:1500px }
-    80%{left:1600px}
-    85%{left:1650px}
-    90%{left:1700px}
-    95%{left:1750px}
-    100%{left:1800px}
+    0%{left:22% }
+    10%{left:25% }
+    15%{left:30% }
+    20%{left:33% }
+    25%{left:35% }
+    30%{left:37% }
+    35%{left:40% }
+    40%{left:50% }
+    45%{left:60% }
+    50%{left:70%}
+    55%{left:72%}
+    60%{left:75% }
+    65%{left:77% }
+    70%{left:80% }
+    75%{left:83% }
+    80%{left:85%}
+    85%{left:87%}
+    90%{left:900%}
+    95%{left:95%}
+    100%{left:100%}
 }
 @keyframes turn1{
     from{
@@ -162,6 +161,7 @@ body{
 #cont{
     height: 1070px;
     background: url(../images/car2.png) repeat-x center top/auto 100%;
+    /* 화면해상도와 상관없이 잘보이게 하기 위해서는 height를 100%로 준다 */
     position: relative;
 }
 
@@ -190,7 +190,8 @@ body{
     left: 0;
     bottom: 0;
     right: 0;
-}
+} 
+/* 유튜브 영사안에 쓸데없는 정보를 지워주고 화면만 보이게 해준다. top,left,right,bottom을 다 0으로 준다는건 양쪽 사방으로 다 당겨준다는 거 */
 
 /* 카 리스트 선택메뉴 */
 .clist{
