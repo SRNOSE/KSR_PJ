@@ -41,7 +41,6 @@ body{
 }
 @keyframes riding{
     0%{left:22% }
-<<<<<<< HEAD
     10%{left:24% }
     15%{left:26% }
     20%{left:28% }
@@ -60,26 +59,6 @@ body{
     85%{left:88%}
     90%{left:90%}
     95%{left:92%}
-=======
-    10%{left:23% }
-    15%{left:25% }
-    20%{left:27% }
-    25%{left:30% }
-    30%{left:35% }
-    35%{left:40% }
-    40%{left:45% }
-    45%{left:50% }
-    50%{left:55%}
-    55%{left:60%}
-    60%{left:65% }
-    65%{left:70% }
-    70%{left:75% }
-    75%{left:80% }
-    80%{left:83%}
-    85%{left:85%}
-    90%{left:87%}
-    95%{left:90%}
->>>>>>> 744086b3673e01177f62bf5bf5bfcfd6e8098d0a
     100%{left:94%}
 }
 @keyframes turn1{
@@ -93,7 +72,6 @@ body{
 }
 @keyframes back { 
     0%{left:94% }
-<<<<<<< HEAD
     10%{left:92% }
     15%{left:90% }
     20%{left:88% }
@@ -112,26 +90,6 @@ body{
     85%{left:28%}
     90%{left:26%}
     95%{left:24%}
-=======
-    10%{left:90% }
-    15%{left:87% }
-    20%{left:85% }
-    25%{left:83% }
-    30%{left:80% }
-    35%{left:75% }
-    40%{left:70% }
-    45%{left:65% }
-    50%{left:60%}
-    55%{left:55%}
-    60%{left:50% }
-    65%{left:45% }
-    70%{left:40% }
-    75%{left:35% }
-    80%{left:30%}
-    85%{left:27%}
-    90%{left:25%}
-    95%{left:23%}
->>>>>>> 744086b3673e01177f62bf5bf5bfcfd6e8098d0a
     100%{left:22%}
 }
 @keyframes turn2{
