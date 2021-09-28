@@ -20,19 +20,19 @@
                 yo;
         }
 
-        // 자동차 애니 클래스 일정시간 간격으로 넣기
+        //자동차 애니 클래스 일정시간 간격으로 넣기
         //setInterval(함수,시간);
-        // 일정시간 간격으로 함수실행하는 JS메서드
-        // setInterval(function(){
-        //     var car = document.querySelector(".ani");
+       // 일정시간 간격으로 함수실행하는 JS메서드
+        setInterval(function(){
+            var car = document.querySelector(".ani");
 
-        //     car.classList.remove("carAni");
-        //     // setTimeout(함수,시간)
-        //     // 일정시간 후 한번 함수실행하는 JS메서드
-        //     setTimeout(function(){
-        //         car.classList.add("carAni");
-        //     },100);//0.1초후 넣기
-        // }, 30000);//30초간격
+            car.classList.remove("carAni");
+            // setTimeout(함수,시간)
+            // 일정시간 후 한번 함수실행하는 JS메서드
+            setTimeout(function(){
+                car.classList.add("carAni");
+            },100);//0.1초후 넣기
+        }, 30000);//30초간격
     </script>
     <title>Mercedes-Benz</title>
 </head>
