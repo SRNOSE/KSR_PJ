@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function gogo(yo) {
+            document.getElementById("tg").src =
+                "https://www.youtube.com/embed/" +
+                yo + 
+                " ?autoplay=1&loop=1&controls=0&playlist=" +
+                yo;
+        }
+
+        //자동차 애니 클래스 일정시간 간격으로 넣기
+        // setInterval(함수,시간);
+        //일정시간 간격으로 함수실행하는 JS메서드
+
+        //setInterval(함수,시간);
+       // 일정시간 간격으로 함수실행하는 JS메서드
+
+        setInterval(function(){
+            var car = document.querySelector(".ani");
+
+            car.classList.remove("carAni");
+            // setTimeout(함수,시간)
+            // 일정시간 후 한번 함수실행하는 JS메서드
+            setTimeout(function(){
+                car.classList.add("carAni");
+            },100);//0.1초후 넣기
+        }, 30000);//30초간격
+    </script>
+    <title>Mercedes-Benz</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="logo">
+            <a href="intro.html">
+                <img src="images/logo.png" alt="벤츠로고">
+                <img src="images/mercedes_benz_car_free_vector_preview.png" alt="움직이는 자동차" class="ani carAni">
+            </a>
+        </h1>
+        <nav class="gnb">
+            <ul>
+                <li>
+                    <a href="#">모델</a>
+                    <ol class="smenu">
+                        <li><a href="#">EQ전기자동차</a></li>
+                        <li><a href="#">SUV</a></li>
+                        <li><a href="#">Sedan</a></li>
+                        <li><a href="#">AMG</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">프로모션</a>
+                    <ol class="smenu">
+                        <li><a href="#">2021클래식 캠페인</a></li>
+                        <li><a href="#">프로모션</a></li>
+                        <li><a href="#">법인 및 법인 임직원 우대 프로그램</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">서비스 및 차량 관리</a>
+                    <ol class="smenu">
+                        <li><a href="#">온라인 서비스 예약</a></li>
+                        <li><a href="#">서비스 안내</a></li>
+                        <li><a href="#">My Service</a></li>
+                        <li><a href="#">공식 서비스 센터</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">온라인샵</a>
+                    <ol class="smenu">
+                        <li><a href="#">메르세데스 미 스토어</a></li>
+                        <li><a href="#">액세서라&컬렉션 온라인샵</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#">메르세데스 월드</a>
+                    <ol class="smenu">
+                        <li><a href="#">역사</a></li>
+                        <li><a href="#">혁신</a></li>
+                        <li><a href="#">디자인</a></li>
+                        <li><a href="#">뉴스&이벤트</a></li>
+                        <li><a href="#">메르세데스-벤츠의 약속</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 메인영역 -->
+    <main id="cont" class="part">
+        <!-- 카 리스트 -->
+        <div id="car">
+            <iframe id="tg" src="https://www.youtube.com/embed/udoFnjFFWNU?autoplay=1&loop=1&playlist=udoFnjFFWNU"
+                allow="autoplay"></iframe>
+        </div>
+        <nav class="clist">
+            <ul>
+                <li>
+                    <a href="#" onclick="gogo('8oqFjWbStxE');return false;">
+                        <img src="images/amg.png" alt="AMG">
+                        <ol class="cartxt">
+                            <li>AMG</li>
+                            <li>출시가 13,660~24,960만원</li>
+                            <li>연비 7.2km/ℓ~8.5km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('SkxAFPKJMqw');return false;">
+                        <img src="images/aclass.png" alt="A-Class">
+                        <ol class="cartxt">
+                            <li>A-Class</li>
+                            <li>출시가 3,940만원</li>
+                            <li>연비 11.9km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('-4zsY28t76k');return false;">
+                        <img src="images/sclass.png" alt="S-Class">
+                        <ol class="cartxt">
+                            <li>S-Class</li>
+                            <li>출시가 14,060~21,860만원 </li>
+                            <li>연비 7.9km/ℓ~12km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('J7LueobArWw');return false;">
+                        <img src="images/cclass.png" alt="C-Class">
+                        <ol class="cartxt">
+                            <li>C-Class</li>
+                            <li>출시가 5,080~6,310만원</li>
+                            <li>연비 10.8km/ℓ~14km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('iUNcigg-GJ4');return false;">
+                        <img src="images/suv.png" alt="SUV">
+                        <ol class="cartxt">
+                            <li>SUV</li>
+                            <li>출시가 5,270~6,370만원</li>
+                            <li>연비 10.5~14.2km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="gogo('7iGFH5HbWGM');return false;">
+                        <img src="images/gwg.png" alt="G-Class">
+                        <ol class="cartxt">
+                            <li>G-Class</li>
+                            <li>출시가 16,060만원 </li>
+                            <li>연비 8.4km/ℓ</li>
+                        </ol>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </main>
+    <footer id="footer">
+        <div class="info">
+            <ul class="leftinfo">
+                <li>Mercedes-Benz AG, Mercedesstr. 120, 70372 Stuttgart, Germany</li>
+                <li><a href="https://www.mercedes-benz.co.kr/passengercars/content-pool/tool-pages/legal/MBMK.html">개인정보처리방침</a></li>
+                <li>쿠키</li>
+                <li>&copy;2021 메르세데스-벤츠 코리아(주) / 메르세데스-벤츠 파이낸셜 서비스 코리아(주)</li>
+            </ul>
+            <ul class="sns">
+                <li>
+                    <a href="https://www.facebook.com/MercedesBenzKorea" target="_blank" title="페이스북바로가기">
+                        <span class="bld">페이스북 바로가기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/mercedesbenz" target="_blank" title="트위터바로가기">
+                        <span class="bld">트위터 바로가기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UChbw0qKAMdFf6TlC0T3Z_zw" target="_blank" title="유튜브바로가기">
+                        <span class="bld">유튜브 바로가기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mercedesbenzkr" target="_blank" title="인스타그램바로가기">
+                        <span class="bld">인스타그램 바로가기</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
