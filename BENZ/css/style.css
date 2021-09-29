@@ -41,24 +41,24 @@ body{
 }
 @keyframes riding{
     0%{left:22% }
-    10%{left:23% }
-    15%{left:25% }
-    20%{left:27% }
+    10%{left:24% }
+    15%{left:26% }
+    20%{left:28% }
     25%{left:30% }
-    30%{left:35% }
-    35%{left:40% }
-    40%{left:45% }
-    45%{left:50% }
-    50%{left:55%}
-    55%{left:60%}
-    60%{left:65% }
-    65%{left:70% }
-    70%{left:75% }
-    75%{left:80% }
-    80%{left:83%}
-    85%{left:85%}
-    90%{left:87%}
-    95%{left:90%}
+    30%{left:40% }
+    35%{left:50% }
+    40%{left:60% }
+    45%{left:65% }
+    50%{left:70%}
+    55%{left:75%}
+    60%{left:77% }
+    65%{left:80% }
+    70%{left:82% }
+    75%{left:84% }
+    80%{left:86%}
+    85%{left:88%}
+    90%{left:90%}
+    95%{left:92%}
     100%{left:94%}
 }
 @keyframes turn1{
@@ -72,24 +72,24 @@ body{
 }
 @keyframes back { 
     0%{left:94% }
-    10%{left:90% }
-    15%{left:87% }
-    20%{left:85% }
-    25%{left:83% }
-    30%{left:80% }
-    35%{left:75% }
-    40%{left:70% }
-    45%{left:65% }
-    50%{left:60%}
-    55%{left:55%}
-    60%{left:50% }
-    65%{left:45% }
-    70%{left:40% }
-    75%{left:35% }
+    10%{left:92% }
+    15%{left:90% }
+    20%{left:88% }
+    25%{left:86% }
+    30%{left:84% }
+    35%{left:82% }
+    40%{left:80% }
+    45%{left:77% }
+    50%{left:75%}
+    55%{left:70%}
+    60%{left:65% }
+    65%{left:60% }
+    70%{left:50% }
+    75%{left:40% }
     80%{left:30%}
-    85%{left:27%}
-    90%{left:25%}
-    95%{left:23%}
+    85%{left:28%}
+    90%{left:26%}
+    95%{left:24%}
     100%{left:22%}
 }
 @keyframes turn2{
