@@ -122,6 +122,11 @@ body{
 {
     height: 150px;
 }
+.gnb > ul > li:last-child .smenu,
+.gnb > ul > li:last-child:hover::after
+{
+    padding-left: 2px;
+}
 .smenu{
     position: absolute;
     height: 0;
