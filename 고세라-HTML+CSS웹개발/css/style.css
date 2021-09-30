@@ -45,18 +45,18 @@ body{
     15%{left:26% }
     20%{left:28% }
     25%{left:30% }
-    30%{left:35% }
-    35%{left:40% }
-    40%{left:45% }
-    45%{left:50% }
-    50%{left:55%}
-    55%{left:60%}
-    60%{left:70% }
-    65%{left:75% }
-    70%{left:80% }
-    75%{left:83% }
-    80%{left:85%}
-    85%{left:88%}
+    30%{left:33% }
+    35%{left:36% }
+    40%{left:40% }
+    45%{left:45% }
+    50%{left:50%}
+    55%{left:55%}
+    60%{left:60% }
+    65%{left:65% }
+    70%{left:70% }
+    75%{left:75% }
+    80%{left:80%}
+    85%{left:85%}
     90%{left:90%}
     95%{left:92%}
     100%{left:94%}
@@ -74,18 +74,18 @@ body{
     0%{left:94% }
     10%{left:92% }
     15%{left:90% }
-    20%{left:88% }
-    25%{left:85% }
-    30%{left:83% }
-    35%{left:80% }
-    40%{left:75% }
-    45%{left:70% }
-    50%{left:60%}
-    55%{left:55%}
-    60%{left:50% }
-    65%{left:45% }
-    70%{left:40% }
-    75%{left:35% }
+    20%{left:85% }
+    25%{left:80% }
+    30%{left:75% }
+    35%{left:70% }
+    40%{left:65% }
+    45%{left:60% }
+    50%{left:55%}
+    55%{left:50%}
+    60%{left:45% }
+    65%{left:40% }
+    70%{left:36% }
+    75%{left:33% }
     80%{left:30%}
     85%{left:28%}
     90%{left:26%}
@@ -115,12 +115,13 @@ body{
     display: block;
 }
 .gnb > ul > li >a:hover{
-    border-bottom: 4px solid #ccc;
+    border-top: 4px solid #ccc;
 }
 .gnb > ul > li:hover .smenu,
 .gnb > ul > li:hover::after
 {
     height: 150px;
+    padding-left: 3px;
 }
 .smenu{
     position: absolute;
