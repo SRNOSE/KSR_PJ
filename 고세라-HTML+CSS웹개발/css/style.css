@@ -121,6 +121,7 @@ body{
 .gnb > ul > li:hover::after
 {
     height: 150px;
+    padding-left: 3px;
 }
 .smenu{
     position: absolute;
