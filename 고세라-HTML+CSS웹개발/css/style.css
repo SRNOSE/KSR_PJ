@@ -115,17 +115,12 @@ body{
     display: block;
 }
 .gnb > ul > li >a:hover{
-    border-bottom: 4px solid #ccc;
+    border-top: 4px solid #ccc;
 }
 .gnb > ul > li:hover .smenu,
 .gnb > ul > li:hover::after
 {
     height: 150px;
-}
-.gnb > ul > li:last-child .smenu,
-.gnb > ul > li:last-child:hover::after
-{
-    padding-left: 2px;
 }
 .smenu{
     position: absolute;
