@@ -59,6 +59,28 @@
 
     //함수 호출하기
     my("프론트앤드 개발자");
+
+    /* 
+      [ 화살표 함수를 쓸때 내부에 this키워드 의미 ]
+      
+      기존 익명함수사용시엔 this키워드가 이벤트 속성에 할당된 함수내부에서 요소자신을 가리킨다
+
+      예)
+      요소.onclick =function(){
+        let x =this.innerText
+      }
+
+      그러나!!!
+      화살표함수를 사용할 경우엔 
+      this키워드는 window객체를 가리킨다.
+      event.currentTarget을 사용해야만 기존의 this키워드롸 같은 요소자신을 표현할수있다
+
+      예)
+      요소.onclick =()=>{
+        let x =event.currentTarget.innerText;
+      }
+
+    */
   </script>
 </head>
 <body>
