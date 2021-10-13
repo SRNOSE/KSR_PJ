@@ -8,5 +8,13 @@
 */
 
 /* 1.상단영역 */
+#top{/* 상단 최상위 부모박스 */
+    position: relative;
+    z-index: 999;
+    /* 최상단에 오게 하도록 */
+}
+.top{
+    background-color: pink;
+}
 /* 2.메인영역 */
 /* 3.하단영역 */

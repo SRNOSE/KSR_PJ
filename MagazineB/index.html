@@ -1,12 +1,530 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Blogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>MagazineB</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/common.js"></script>
+  <title>MagazineB 메인페이지</title>
 </head>
+
 <body>
-  
+  <!-- 1.상단영역 -->
+  <div id="top">
+    <header class="top ibx">
+      <!-- 1-1.상단메뉴 -->
+      <nav class="gnb">
+        <ul>
+          <li>
+            <a href="#">ARCHIVE</a>
+          </li>
+          <li>
+            <a href="#">STORY</a>
+          </li>
+          <li>
+            <a href="#">SHOP</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 1-2. 사이드메뉴 -->
+      <div class="sidemenu">
+        <ul class="smbx">
+          <li>
+            <a href="#" class="fi fi-search"></a>
+          </li>
+          <li>
+            <a href="#" class="fi fi-shopping-basket-add"></a>
+          </li>
+          <li>
+            <a href="#" class="fi fi-nav-icon"></a>
+            <ol class="smsub">
+              <li>
+                <a href="#">ABOUT B</a>
+              </li>
+              <li>
+                <a href="#">ARCHIVE</a>
+              </li>
+              <li>
+                <a href="#">STORY</a>
+              </li>
+              <li>
+                <a href="#">SHOP</a>
+              </li>
+              <li>
+                <a href="#">로그인/회원가입</a>
+              </li>
+              <li>
+                <a href="#">주문조회</a>
+              </li>
+              <li>
+                <a href="#">ABOUT B</a>
+              </li>
+              <li>
+                <a href="#">장바구니</a>
+              </li>
+              <li>
+                <a href="#">B CAST</a>
+              </li>
+              <li>
+                <a href="#">NEWSLETTER</a>
+              </li>
+              <li>
+                <a href="#">KOR</a> |
+                <a href="#">ENG</a>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <!-- 1-3. 로고박스 -->
+      <h1 class="logo">
+        <a href="#">
+          <img src="images/Blogo.png" alt="메인로고">
+        </a>
+      </h1>
+    </header>
+  </div>
+  <!-- 2.메인영역 -->
+  <!-- 2-1. 메인배너영역 -->
+  <div class="visual">
+    <div>
+      <img src="images/mainb1.jpg" alt="메인페이지1">
+    </div>
+    <div>
+      <img src="images/mainb2.jpg" alt="메인페이지2">
+    </div>
+    <div>
+      <img src="images/mainb3.jpg" alt="메인페이지3">
+    </div>
+    <div>
+      <img src="images/mainb4.jpg" alt="메인페이지4">
+    </div>
+  </div>
+  <!-- 2-2.스토리영역 -->
+  <main class="ibx">
+    <section class="pt1 rbx">
+      <div class="rbxIn">
+        <h2>BRAND STORY</h2>
+        <!-- 브랜드 스토리 슬라이드 -->
+        <div id="slide">
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs1.jpg" alt="틱톡">
+            </a>
+            <p>
+              <h3>TikTok</h3>
+              <span>TikTok</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs2.jpg" alt="USM">
+            </a>
+            <p>
+              <h3>USM</h3>
+              <span>USM</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs3.jpg" alt="아스티에 드 빌라트">
+            </a>
+            <p>
+              <h3>ASTIER de VILLATTE</h3>
+              <span>아스티에 드 빌라트</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs4.jpg" alt="Rapha">
+            </a>
+            <p>
+              <h3>Rapha</h3>
+              <span>라파</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs5.jpg" alt="유튜브">
+            </a>
+            <p>
+              <h3>Youtube</h3>
+              <span>유튜브</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs6.jpg" alt="Soho House">
+            </a>
+            <p>
+              <h3>Soho House</h3>
+              <span>소호하우스</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs7.jpg" alt="Montblanc">
+            </a>
+            <p>
+              <h3>Montblanc</h3>
+              <span>몽블랑</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs8.jpg" alt="Mini">
+            </a>
+            <p>
+              <h3>Mini</h3>
+              <span>미니</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs9.jpg" alt="A.P.C.">
+            </a>
+            <p>
+              <h3>A.P.C.</h3>
+              <span>아페쎄</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs10.jpg" alt="G-Shock">
+            </a>
+            <p>
+              <h3>G-Shock</h3>
+              <span>지샥</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs11.jpg" alt="Blue Bottle Coffee">
+            </a>
+            <p>
+              <h3>Blue Bottle Coffee</h3>
+              <span>블루보틀 커피</span>
+            </p>
+          </div>
+          <div class=cbx>
+            <a href="#">
+              <img src="images/bs12.jpg" alt="Lululemon">
+            </a>
+            <p>
+              <h3>Lululemon</h3>
+              <span>룰루레몬</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 브랜드 스토리 슬라이드 이동버튼 -->
+      <a href="#" class="abtn ab1">
+        <i class="fi fi-angle-left"></i>
+      </a>
+      <a href="#" class="abtn ab2">
+        <i class="fi fi-angle-right"></i>
+      </a>
+    </section>
+  </main>
+  <!-- 2-3.인터뷰영역 -->
+  <section class="pt1 rbx">
+    <div class="rbxIn">
+      <h2>INTERVIEW</h2>
+      <!-- 인터뷰 슬라이드 -->
+      <div id="slide">
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv1.png" alt="Sean Kim">
+          </a>
+          <p>
+            <h3>Sean Kim</h3>
+            <span>션 킴</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv2.jpg" alt="Nick Jones">
+          </a>
+          <p>
+            <h3>Nick Jones</h3>
+            <span>닉 존스</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv3.jpg" alt="Peter Chipchase">
+          </a>
+          <p>
+            <h3>Peter Chipchase</h3>
+            <span>피터 칩체이스</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv4.jpg" alt="Bernd Körber">
+          </a>
+          <p>
+            <h3>Bernd Körber</h3>
+            <span>베른트 쾨버</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv5.jpg" alt="Oliver Heilmer">
+          </a>
+          <p>
+            <h3>Oliver Heilmer</h3>
+            <span>올리버 하일머</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv6.jpg" alt="Steve Chen">
+          </a>
+          <p>
+            <h3>Steve Chen</h3>
+            <span>스티브 첸</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv7.jpg" alt="Robert Kyncl">
+          </a>
+          <p>
+            <h3>Robert Kyncl</h3>
+            <span>로버트 킨슬</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv8.jpeg" alt="Zaim Kamal">
+          </a>
+          <p>
+            <h3>Zaim Kamal</h3>
+            <span>자임 카말</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv9.jpeg" alt="Nicolas Baretzki">
+          </a>
+          <p>
+            <h3>Nicolas Baretzki</h3>
+            <span>니콜라스 바레츠키</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv10.jpg" alt="Ivan Pericoli">
+          </a>
+          <p>
+            <h3>Ivan Pericoli</h3>
+            <span>이반 페리콜리</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv11.jpg" alt="Benoît Astier de Villatte">
+          </a>
+          <p>
+            <h3>Benoît Astier de Villatte</h3>
+            <span>베누아 아스티에 드 빌라트</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/itv12.jpg" alt="Alexander Schärer">
+          </a>
+          <p>
+            <h3>Alexander Schärer</h3>
+            <span>알렉산더 셰러</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 인터뷰 슬라이드 이동버튼 -->
+    <a href="#" class="abtn ab1">
+      <i class="fi fi-angle-left"></i>
+    </a>
+    <a href="#" class="abtn ab2">
+      <i class="fi fi-angle-right"></i>
+    </a>
+  </section>
+
+  <!-- 2-4.shop영역 -->
+  <section class=" pt2 rbx">
+    <div class="rbxIn">
+      <h2>SHOP</h2>
+      <!-- 인터뷰 슬라이드 -->
+      <div id="slide">
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop1.jpg" alt="COPENHAGEN">
+          </a>
+          <p>
+            <strong>Issue No.88</strong>
+            <h3>COPENHAGEN</h3>
+            <span>\16,200</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop2.png" alt="ICE CREAM">
+          </a>
+          <p>
+            <strong>Issue No.17</strong>
+            <h3>ICE CREAM</h3>
+            <span>\13,500</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop3.png" alt="TIKTOK">
+          </a>
+          <p>
+            <strong>Issue No.87</strong>
+            <h3>TIKTOK</h3>
+            <span>\16,200</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop4.png" alt="NAMUL">
+          </a>
+          <p>
+            <strong>Issue No.16</strong>
+            <h3>NAMUL</h3>
+            <span>\13,500</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop5.png" alt="EGG">
+          </a>
+          <p>
+            <strong>Issue No.15</strong>
+            <h3>EGG</h3>
+            <span>\13,500</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop6.jpg" alt="USM">
+          </a>
+          <p>
+            <strong>Issue No.86</strong>
+            <h3>USM</h3>
+            <span>\16,200</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop7.png" alt="죠르디 24시">
+          </a>
+          <p>
+            <h3>COPENHAGEN</h3>
+            <span>\19,800</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop8.png" alt="THE SHOP">
+          </a>
+          <p>
+            <h3>THE SHOP</h3>
+            <span>\20,700</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop9.jpg" alt="BEER">
+          </a>
+          <p>
+            <strong>Issue No.14</strong>
+            <h3>BEER</h3>
+            <span>\13,500</span>
+          </p>
+        </div>
+        <div class=cbx>
+          <a href="#">
+            <img src="images/shop10.jpg" alt="ASTIER DE VILLATTE">
+          </a>
+          <p>
+            <strong>Issue No.85</strong>
+            <h3>ASTIER DE VILLATTE</h3>
+            <span>\13,500</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- SHOP 슬라이드 이동버튼 -->
+    <a href="#" class="abtn ab1">
+      <i class="fi fi-angle-left"></i>
+    </a>
+    <a href="#" class="abtn ab2">
+      <i class="fi fi-angle-right"></i>
+    </a>
+  </section>
+  <!-- 2-5.B CAST영역 -->
+  <section class=" pt3 rbx">
+    <div class="rbxIn">
+      <h2>B CAST</h2>
+      <div class="castcont">
+        <div class="castcover">
+          <a href="#">
+            <img src="images/bcast.jpg" alt="B CAST MEETS : HAY">
+          </a>
+        </div>
+        <div class="casttit">
+          <p>Episode 113</p>
+          <h3>B CAST MEETS : HAY</h3>
+          <div class="links">
+            <a href="https://apple.co/37BAefc" target="_blank"> iOS - iTunes</a>
+            <a href="http://www.podbbang.com/ch/13074" target="_blank"> Android - Podbbang</a>
+          </div>
+        </div>
+        <div class="castsub">
+          2002년 롤프와 메테 헤이 부부가 덴마크 코펜하겐에서 설립한 헤이는 가정용 소파와 오피스 가구부터 거울, 옷걸이, 유리컵 등 생활 전반에 필요한 액세서리까지 폭넓게 선보이는 홈 &amp;
+          라이프스타일 브랜드입니다. 덴마크의 전통적 미학과 현대의 기술력을 결합하는 제품 철학을 바탕으로 신진 디자이너 및 브랜드와 다채로운 협업을 진행해 빠르게 영역을 넓혀왔으며, 디자인과 가격, 리테일
+          전략 등을 내세워 동시대에 걸맞은 데니시 스타일을 제시했다는 평가를 받고 있습니다.
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 3.하단영역 -->
+<footer id="info ibx">
+  <!-- 3-1. 하단로고 -->
+  <div class="blogo">
+    <img src="images/bottomlogo.png" alt="하단로고">
+  </div>
+  <!-- 3-2. 회사주소 -->
+  <address class="addr">
+    서울특별시 용산구 대사관로 35, 2층 회사명 : 비미디어컴퍼니(주) 대표자 : 김명수<br>
+    COPYRIGHT&copy; B MEDIA COMPANY
+  </address>
+ <!-- 3-3. 하단링크 -->
+ <ul class="blink">
+  <li>
+      <a href="#">정기구독</a>
+  </li>
+  <li>
+      <a href="#">회사소개</a>
+  </li>
+  <li>
+      <a href="#">광고 및 제휴</a>
+  </li>
+  <li>
+      <a href="#">개인정보 처리방침</a>
+  </li>
+</ul>
+</footer>
 </body>
+
 </html>
