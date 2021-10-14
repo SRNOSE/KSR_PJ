@@ -88,11 +88,16 @@
 }
 
 /* 전체메뉴 서브메뉴 */
+#close{
+    margin-top: -46px;
+    display: none;
+}
 .smsub{
+    position: absolute;
+    right: -150%;
     background-color:#000;
     width: 240px;
     height: 100vh;
-    transition: height .5s ease-out;
 }
 .smsub > li{
     width: 200px;
