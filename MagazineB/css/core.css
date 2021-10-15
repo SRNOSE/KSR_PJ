@@ -19,76 +19,51 @@ font-family: 'Circular Std Black Italic', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 
-/* 속박스 */
-.ibx{
-   
-    max-width: 1920px;
-    margin: 0 auto;
+/* 겉상자 */
+.ibx {
+  max-width: 1920px;
+  margin: 0 auto;
 }
-/* 비율유지 박스 */
-.rbx{
-    position: relative;
-    /* 부모자격- .rbxIN */
-}
-/* 비율밀기 가상요소 */
-.rbx::before{
-    content: '';
-    display: block;
-}
-/* 스타일별 비율밀기 */
 
-/* 이미지 4개짜리 pt1 */
-.pt1.rbx::before{
-    padding-top:38.46% ;
-    /* 
-        비율계산500px*100/1300=
-    */
+/* 브랜드스토리영역 */
+.cont1-1 {
+  max-width: 1066px;
+  margin: 0 auto;
 }
-/* 이미지 5개짜리 pt1 */
-.pt1.rbx::before{
-    padding-top:46.07% ;
-    /* 
-    비율계산599px*100/1300=
-    */
+
+.cont1-1 h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.28rem;
+  font-weight: bold;
+  padding: 100px 0;
 }
-/* 이미지 1개짜리 pt3 */
-.pt2.rbx::before{
-    padding-top:40% ;
-    /* 
-        비율계산520px*100/1300=
-    */
-}
-/* 비율박스 속박스 !!!!여기부터!!! */
-/* .rbxIn{
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
 
 
 /* 슬릭슬라이드 dots */
 .visual .slick-dots {
-    bottom: 10px;
-  }
-  .visual .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #676767;
-    cursor: pointer;
-  }
-  .visual .slick-dots li button::before {
-    content: none;
-  }
-  .visual .slick-dots li.slick-active button {
-    background-color: #fff;
-  }
-  .visual .slick-dotted.slick-slider {
-    margin-bottom: 0;
-  }
+  bottom: 10px;
+}
 
-  /* 스토리영역 */
-  
+.visual .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #676767;
+  cursor: pointer;
+}
+
+.visual .slick-dots li button::before {
+  content: none;
+}
+
+.visual .slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+.visual .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/* 스토리영역 */
