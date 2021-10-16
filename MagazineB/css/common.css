@@ -7,7 +7,9 @@
     공통기능: 상단영역(로고, 메뉴, GNB)
             하단영역(하단로고, 회사정보)
 */
-
+html,body{
+    overflow-x: hidden;
+}
 /* 이미지 */
 img {
     background-repeat: no-repeat;

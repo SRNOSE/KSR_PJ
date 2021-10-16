@@ -57,11 +57,18 @@ main.bg1-2
 {
   background-color:#ebe9eb;
   margin-top: -30px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   position: relative;
 }
+main.bg1-3{
+  background-color:#222;
+  position: relative;
+  color: #fff;
+}
 .cont1-1,
-.cont1-2
+.cont1-2,
+.cont1-3,
+.cont1-4
 {
   max-width: 1066px;
   height: 100%;
@@ -80,7 +87,16 @@ h2 {
   position: relative;
   float: left;
   width: 24%;
-  margin: 0 auto;
+}
+.cont1-3 .screen{
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 400px;
+  margin-left: 25px;
+}
+.cont1-3 .screen:first-child{
+  padding-left: 0;
 }
 .cont1-1 .screen .bottom,
 .cont1-2 .screen .bottom
@@ -99,6 +115,17 @@ h2 {
   font-size: 20px;
   font-weight: bold;
 }
+.cont1-3 .screen .bottom{
+  position: absolute;
+    bottom: 45px;
+    z-index: 2;
+    color: #000;
+    transition: all 0.3s;
+    width: 167px;
+    height: 120px;
+    text-align: left;
+    padding-top: 17px;
+}
 .cont1-1 .screen .bottom span,
 .cont1-2 .screen .bottom span
 {
@@ -108,9 +135,20 @@ h2 {
   color: #888;
   padding-top: 5px;
 }
-
+.cont1-3 .screen .bottom span:first-child{
+  display: block;
+  font-size: 16px;
+  margin: 15px 0 10px;
+  letter-spacing: 0.8px;
+  font-family: 'Circular Std Bold';
+  font-weight: bold;
+}
+.cont1-3 .screen .bottom span:last-child{
+  font-size: 13px;
+}
 .cont1-1 .slick-prev,
-.cont1-2 .slick-prev
+.cont1-2 .slick-prev,
+.cont1-3 .slick-prev
 {
   position: absolute;
   left: -7%;
@@ -120,8 +158,12 @@ h2 {
   height: 30px;
   display: inline-block;
 }
+.cont1-3 .slick-prev{
+  top: 20%;
+}
 .cont1-1 .slick-prev::before,
-.cont1-2 .slick-prev::before
+.cont1-2 .slick-prev::before,
+.cont1-3 .slick-prev::before
 {
   content: '\f104';
   color: #666;
@@ -129,7 +171,8 @@ h2 {
   font-size: 50px;
 }
 .cont1-1 .slick-next,
-.cont1-2 .slick-next
+.cont1-2 .slick-next,
+.cont1-3 .slick-next
 {
   position: absolute;
   right: -7%;
@@ -139,8 +182,12 @@ h2 {
   height: 30px;
   display: inline-block;
 }
+.cont1-3 .slick-next{
+  top: 20%;
+}
 .cont1-1 .slick-next::before,
-.cont1-2 .slick-next::before
+.cont1-2 .slick-next::before,
+.cont1-3 .slick-next::before
 {
   content: '\f105';
   color: #666;
@@ -151,6 +198,62 @@ h2 {
 /* shop영역 */
 main.bg1-2{
   background-color: rgb(221,221,221);
-  height: 600px;
+  height: 630px;
   position: relative;
+}
+/* b케스트 */
+.cont1-4{
+  height: 520px;
+}
+.castcont{
+  display: flex;
+  width: 100%;
+}
+.castcont >div{
+  justify-content: center;
+  margin-top: -40px;
+  flex: 1;
+}
+.castcover a{
+  display: block;
+  width: 250px;
+}
+.casttit{
+  margin-left: -170px;
+  font-family: 'Circular Std Bold';
+}
+.casttit > p{
+  font-size: 21px;
+}
+.casttit h3{
+  font-size: 35px;
+  padding-top: 5px;
+}
+.links a{
+  display: block;
+  padding-top: 26px;
+  text-decoration: underline;
+}
+.castsub{
+  margin-left: -156px;
+  font-size: 16px;
+  line-height: 31px;
+}
+#footer{
+  background-color: #000;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer >div{
+  flex: 1;
+}
+.addr{
+  line-height: 30px;
+}
+.blink{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -25px;
 }
