@@ -19,28 +19,12 @@ font-family: 'Circular Std Black Italic', sans-serif; */
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 
-/* 겉상자 */
-.ibx {
-  max-width: 1920px;
-  margin: 0 auto;
-}
 
-/* 브랜드스토리영역 */
-.cont1-1 {
-  max-width: 1066px;
-  margin: 0 auto;
-}
 
-.cont1-1 h2 {
+
+.visual > div img{
   width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  letter-spacing: 0.28rem;
-  font-weight: bold;
-  padding: 100px 0;
 }
-
-
 /* 슬릭슬라이드 dots */
 .visual .slick-dots {
   bottom: 10px;
@@ -66,4 +50,107 @@ font-family: 'Circular Std Black Italic', sans-serif; */
   margin-bottom: 0;
 }
 
-/* 스토리영역 */
+/* 브랜드스토리영역 */
+
+main.bg1-1,
+main.bg1-2
+{
+  background-color:#ebe9eb;
+  margin-top: -30px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.cont1-1,
+.cont1-2
+{
+  max-width: 1066px;
+  height: 100%;
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.28rem;
+  font-weight: bold;
+  padding: 100px 0;
+}
+.cont1-1 .screen,
+.cont1-2 .screen
+{
+  position: relative;
+  float: left;
+  width: 24%;
+  margin: 0 auto;
+}
+.cont1-1 .screen .bottom,
+.cont1-2 .screen .bottom
+{
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  color: #000;
+  font-size: 14px;
+  transition: all 0.3s;
+  background-color: #fff;
+  width: 260px;
+  height: 80px;
+  text-align: center;
+  padding-top: 17px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.cont1-1 .screen .bottom span,
+.cont1-2 .screen .bottom span
+{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 14px;
+  color: #888;
+  padding-top: 5px;
+}
+
+.cont1-1 .slick-prev,
+.cont1-2 .slick-prev
+{
+  position: absolute;
+  left: -7%;
+  top: 45%;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.cont1-1 .slick-prev::before,
+.cont1-2 .slick-prev::before
+{
+  content: '\f104';
+  color: #666;
+  font-family: fontAwesome;
+  font-size: 50px;
+}
+.cont1-1 .slick-next,
+.cont1-2 .slick-next
+{
+  position: absolute;
+  right: -7%;
+  top: 45%;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.cont1-1 .slick-next::before,
+.cont1-2 .slick-next::before
+{
+  content: '\f105';
+  color: #666;
+  font-family: fontAwesome;
+  font-size: 50px;
+}
+
+/* shop영역 */
+main.bg1-2{
+  background-color: rgb(221,221,221);
+  height: 600px;
+  position: relative;
+}
