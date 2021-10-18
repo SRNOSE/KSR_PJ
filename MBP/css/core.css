@@ -102,23 +102,37 @@ h2 {
 .cont1-2 .screen .bottom
 {
   position: absolute;
-  bottom: 0;
+  bottom: -29%;
   z-index: 2;
   color: #000;
   font-size: 14px;
   transition: all 0.3s;
   background-color: #fff;
   width: 260px;
-  height: 200px;
+  height: 170px;
   text-align: center;
   padding-top: 17px;
   font-size: 20px;
   font-weight: bold;
+  transition: bottom .4s linear;
+}
+.cont1-1 .screen:hover .bottom, 
+.cont1-2 .screen:hover .bottom
+{
+  bottom: 0;
 }
 .cont1-1 .screen .bottom p{
-  font-size: 10px;
-  font-weight: normal;
-  text-align: center;
+  font-size: 11px;
+    font-weight: normal;
+    width: 232px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    line-height: 15px;
+    padding: 0 14px;
+    margin: 0 auto;
+    color: rgb(54, 54, 54);
 }
 .cont1-3 .screen .bottom{
   position: absolute;
@@ -130,9 +144,6 @@ h2 {
     height: 120px;
     text-align: left;
     padding-top: 17px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .cont1-1 .screen .bottom span,
 .cont1-2 .screen .bottom span
