@@ -245,6 +245,8 @@ main.bg1-2{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 150px;
+  font-size: 14px;
 }
 #footer >div{
   flex: 1;
