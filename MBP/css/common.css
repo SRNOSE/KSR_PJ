@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* MagazineB 공통 기능 디자인 - common.css */
+/* 
+
+/* 
+    공통기능: 상단영역(로고, 메뉴, GNB)
+            하단영역(하단로고, 회사정보)
+*/
+html,body{
+    overflow-x: hidden;
+}
+/* 이미지 */
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* 1.상단영역 */
+#top {
+    /* 상단 최상위 부모박스 */
+    position: relative;
+    z-index: 999;
+    /* 최상단에 오게 하도록 */
+    font-family: 'Circular Std', 'Noto Sans KR';
+}
+
+.top {
+    min-height: 84px;
+}
+
+/* 1-1. 상단메뉴 */
+.tmenu {
+    display: flex;
+}
+
+.tmenu>nav,
+.tmenu>h1,
+.tmenu>div {
+    flex: 1;
+}
+
+/* 1-2. gnb박스 */
+.gnb {
+    min-height: 84px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 84px;
+    color: #666;
+}
+
+.gnb>ul {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+}
+
+/* 1-3. 로고박스 */
+.logo {
+    text-align: center;
+    margin-top: 17px;
+}
+
+.logo a {
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+/* 1-4.사이드메뉴 */
+.sidemenu {
+    position: relative;
+    /* 부모자격 */
+}
+
+/* 사이드메뉴 내용박스 */
+.smbx {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    /* 부모는 .sidemenu  */
+    display: flex;
+}
+
+/* 사이드메뉴 a요소 */
+.smbx>li>a {
+    display: block;
+    padding: 0 20px;
+    line-height: 46px;
+    color: #676767;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+
+/* 전체메뉴 서브메뉴 */
+#all,
+#close {
+    font-size: 1.2rem;
+}
+
+#close {
+    display: none;
+}
+
+.smsub {
+    position: absolute;
+    right: -200%;
+    top: 65px;
+    width: 240px;
+    height: 100vh;
+    font-size: 15px;
+    background-color: #000;
+    transition: all .5s ease-in-out;
+}
+
+.smsub>li {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.smsub>li:first-child,
+.smsub>li:nth-child(4),
+.smsub>li:nth-child(8) {
+    border-bottom: 2px solid #fff;
+}
+
+.smsub>li>a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 2.메인영역 */
+/* 3.하단영역 */
