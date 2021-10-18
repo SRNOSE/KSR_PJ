@@ -137,7 +137,7 @@ h2 {
     color: rgb(54, 54, 54);
 }
 .cont1-3 .screen .bottom{
-  position: absolute;
+    position: absolute;
     bottom: 45px;
     z-index: 2;
     color: #000;
@@ -155,14 +155,13 @@ h2 {
   margin-bottom: 14px;
   color: #888;
   padding-top: 5px;
+  font-weight: normal;
 }
 .cont1-3 .screen .bottom span:first-child{
   display: block;
   font-size: 16px;
   margin: 15px 0 10px;
   letter-spacing: 0.8px;
-  font-family: 'Circular Std Bold';
-  font-weight: bold;
 }
 .cont1-3 .screen .bottom span:last-child{
   font-size: 13px;

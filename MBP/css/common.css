@@ -9,6 +9,7 @@
 */
 html,body{
     overflow-x: hidden;
+    font-family: 'Circular Std', 'Noto Sans KR';
 }
 /* 이미지 */
 img {
