@@ -116,6 +116,13 @@ h2 {
 .cont1-2 .screen:hover .bottom
 {
   bottom: 0;
+  z-index: 10;
+}
+.cont1-1 .screen:hover img,
+.cont1-2 .screen:hover img
+{
+  filter: blur(2px);
+  z-index: 1;
 }
 .cont1-1 .screen .bottom p,
 .cont1-2 .screen .bottom p
