@@ -11,7 +11,6 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/autoScroll.js"></script>
-  <script src="js/linksys.js"></script>
   <script src="js/common.js"></script>
   <title>MagazineB 인트로페이지</title>
 </head>
@@ -48,13 +47,13 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(255, 255, 255, 0.746);
   }
 
   /* 상단영역 속박스 */
   .top {
     position: relative;
-    height: 100px;
+    height: 115px;
   }
 
   /* 1-1.로고 */
@@ -67,7 +66,7 @@
 
   #logo img {
     width: 100%;
-    margin-top: -15px;
+    margin-top: -5px;
   }
 
   /* 1-2. gnb */
@@ -105,6 +104,50 @@
   #pg7 {
     background: url(images/fpi/cover7.png) no-repeat center/cover;
   }
+   /* 인디케이터 */
+   .indic {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            /* 세로중앙이동 */
+            left: 5%;
+            width: 20px;
+            /* outline: 3px dotted blue; */
+        }
+
+        .indic li {
+            width: 100%;
+            height: 10px;
+            margin: 3px 0;
+            cursor: pointer;
+            /* 손가락모양 */
+        }
+
+        /* a요소 */
+        .indic a {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px #000;
+            transition: width .4s;
+        }
+
+        /* 마우스 오버시 + 클래스 "on" */
+        .indic li:hover a,
+        .indic li.on a {
+            width: 150%;
+            background-color: #fff;
+        }
+        .enter{
+          display: block;
+          position: absolute;
+          top: 3.5vh;
+          right: 4vw;
+          font-size: 30px;
+        }
+
 </style>
 
 <body>
@@ -113,7 +156,7 @@
     <header class="top ibx">
       <!-- 1-1.로고 -->
       <h1 id="logo">
-        <a href="">
+        <a href="index.html">
           <img src="images/fpi/intrologo.png" alt="매거진B 로고">
         </a>
       </h1>
@@ -143,6 +186,9 @@
           </li>
         </ul>
       </nav>
+      <a href="index.html" class="enter">
+        <img src="images/enter.png" alt="들어가기">
+      </a>
     </header>
   </div>
 
@@ -158,7 +204,7 @@
   <!-- 3. 인디게이터 (위치 표시자) -->
   <nav class="indic">
     <ul>
-      <li>
+      <li class="on">
         <a href="#pg1"></a>
       </li>
       <li>
