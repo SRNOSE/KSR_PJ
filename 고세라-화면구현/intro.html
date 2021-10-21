@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Blogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/autoScroll.js"></script>
+  <script src="js/common.js"></script>
+  <title>MagazineB 인트로페이지</title>
+</head>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* 보이는 화면기준 채우기 */
+    /* body하위 요소의 높이값 %의 기준이됨! */
+    overflow: hidden;
+    /* 스크롤바 숨기기 */
+  }
+
+  /* 페이지 공통 class */
+  .page {
+    /* 한페이지에 보이는 화면 채우기 */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 중앙속박스 */
+  .ibx {
+    width: 1920px;
+    max-width: 100%;
+    /* 최대너비 1920px보다 작으면 100%를 유지함 */
+    margin: 0 auto;
+  }
+
+  /* 상단영역 */
+  #top {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.746);
+  }
+
+  /* 상단영역 속박스 */
+  .top {
+    position: relative;
+    height: 115px;
+  }
+
+  /* 1-1.로고 */
+  #logo {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  #logo img {
+    width: 100%;
+    margin-top: -5px;
+  }
+
+  /* 1-2. gnb */
+  .gnb {
+    position: absolute;
+    top: 40px;
+    right: 2%;
+  }
+
+  /* 개별 페이지 셋팅 */
+  #pg1 {
+    background: url(images/fpi/cover1.png) no-repeat center/cover;
+  }
+
+  #pg2 {
+    background: url(images/fpi/cover2.png) no-repeat center/cover;
+  }
+
+  #pg3 {
+    background: url(images/fpi/cover3.png) no-repeat center/cover;
+  }
+
+  #pg4 {
+    background: url(images/fpi/cover4.png) no-repeat center/cover;
+  }
+
+  #pg5 {
+    background: url(images/fpi/cover5.png) no-repeat center/cover;
+  }
+
+  #pg6 {
+    background: url(images/fpi/cover6.png) no-repeat center/cover;
+  }
+
+  #pg7 {
+    background: url(images/fpi/cover7.png) no-repeat center/cover;
+  }
+   /* 인디케이터 */
+   .indic {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            /* 세로중앙이동 */
+            left: 5%;
+            width: 20px;
+            /* outline: 3px dotted blue; */
+        }
+
+        .indic li {
+            width: 100%;
+            height: 10px;
+            margin: 3px 0;
+            cursor: pointer;
+            /* 손가락모양 */
+        }
+
+        /* a요소 */
+        .indic a {
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+            background-color: #fff;
+            box-shadow: 2px 2px 2px #000;
+            transition: width .4s;
+        }
+
+        /* 마우스 오버시 + 클래스 "on" */
+        .indic li:hover a,
+        .indic li.on a {
+            width: 150%;
+            background-color: #fff;
+        }
+        .enter{
+          display: block;
+          position: absolute;
+          top: 3.5vh;
+          right: 4vw;
+          font-size: 30px;
+        }
+
+</style>
+
+<body>
+  <!-- 1.상단영역 -->
+  <div id="top">
+    <header class="top ibx">
+      <!-- 1-1.로고 -->
+      <h1 id="logo">
+        <a href="index.html">
+          <img src="images/fpi/intrologo.png" alt="매거진B 로고">
+        </a>
+      </h1>
+      <!-- 1-2. gnb메뉴 -->
+      <nav class="gnb">
+        <ul>
+          <li>
+            <a href="#pg1"></a>
+          </li>
+          <li>
+            <a href="#pg2"></a>
+          </li>
+          <li>
+            <a href="#pg3"></a>
+          </li>
+          <li>
+            <a href="#pg4"></a>
+          </li>
+          <li>
+            <a href="#pg5"></a>
+          </li>
+          <li>
+            <a href="#pg6"></a>
+          </li>
+          <li>
+            <a href="#pg7"></a>
+          </li>
+        </ul>
+      </nav>
+      <a href="index.html" class="enter">
+        <img src="images/enter.png" alt="들어가기">
+      </a>
+    </header>
+  </div>
+
+  <!-- 2. 페이지영역 -->
+  <section id="pg1" class="page"></section>
+  <section id="pg2" class="page"></section>
+  <section id="pg3" class="page"></section>
+  <section id="pg4" class="page"></section>
+  <section id="pg5" class="page"></section>
+  <section id="pg6" class="page"></section>
+  <section id="pg7" class="page"></section>
+
+  <!-- 3. 인디게이터 (위치 표시자) -->
+  <nav class="indic">
+    <ul>
+      <li class="on">
+        <a href="#pg1"></a>
+      </li>
+      <li>
+        <a href="#pg2"></a>
+      </li>
+      <li>
+        <a href="#pg3"></a>
+      </li>
+      <li>
+        <a href="#pg4"></a>
+      </li>
+      <li>
+        <a href="#pg5"></a>
+      </li>
+      <li>
+        <a href="#pg6"></a>
+      </li>
+      <li>
+        <a href="#pg7"></a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>
