@@ -49,7 +49,13 @@ address {
   font-style: normal;
 }
 
-
+/* 드래그선택 안되게 하는 css 싸고있는박스에 클래스 주기 */
+.dselect{
+  user-select: none;
+  /* 선택안되게함 */
+  -webkit-user-drag: none;
+  /* 드래그안되게 함 */
+}
 /* 폰트부분 */
 body {
   font: 16px/1.5 'Noto Sans KR', sans-serif;
