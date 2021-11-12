@@ -161,7 +161,7 @@ body{
 /* 메인영역 */
 #cont{
     height: 1070px;
-    background: url(../images/car2.png) repeat-x center top/auto 100%;
+    background: url(../images/car2.png) repeat-x center top/100% 100%;
     /* 화면해상도와 상관없이 잘보이게 하기 위해서는 height를 100%로 준다 */
     position: relative;
 }
